@@ -1,0 +1,3 @@
+const {id} = req.params;
+    const Campground = campground.findByIdAndUpdate(id, {...req.body.campground});
+    res.redirect(`./campgrounds/${Campground._id}`)});
